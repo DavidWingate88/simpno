@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple or Not</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .button {
+        font-size: 36px;
+        margin: 0 10px;
+        padding: 20px 40px;
+        border-radius: 10px;
+        background-color: lightgray;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="button" onclick="updateText('simple')">Simple</div>
+      <div class="button" onclick="updateText('not')">Not</div>
+    </div>
+    <script>
+      function updateText(text) {
+        document.body.innerHTML = `<div class="container"><div class="button">${text}</div></div>`;
+      }
+    </script>
+  </body>
+</html>
